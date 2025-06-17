@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"motowifi\startup_stm32f103xe.o"
+"motowifi\main.o"
+"motowifi\gpio.o"
+"motowifi\tim.o"
+"motowifi\stm32f1xx_it.o"
+"motowifi\stm32f1xx_hal_msp.o"
+"motowifi\motor.o"
+"motowifi\stm32f1xx_hal_gpio_ex.o"
+"motowifi\stm32f1xx_hal_tim.o"
+"motowifi\stm32f1xx_hal_tim_ex.o"
+"motowifi\stm32f1xx_hal.o"
+"motowifi\stm32f1xx_hal_rcc.o"
+"motowifi\stm32f1xx_hal_rcc_ex.o"
+"motowifi\stm32f1xx_hal_gpio.o"
+"motowifi\stm32f1xx_hal_dma.o"
+"motowifi\stm32f1xx_hal_cortex.o"
+"motowifi\stm32f1xx_hal_pwr.o"
+"motowifi\stm32f1xx_hal_flash.o"
+"motowifi\stm32f1xx_hal_flash_ex.o"
+"motowifi\stm32f1xx_hal_exti.o"
+"motowifi\system_stm32f1xx.o"
+--strict --scatter "MotoWifi\MotoWifi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MotoWifi.map" -o MotoWifi\MotoWifi.axf
